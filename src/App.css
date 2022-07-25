@@ -1,0 +1,282 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 60px;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+.m{
+  background: rgb(39,42,181);
+  background: linear-gradient(90deg, rgba(39,42,181,1) 0%, rgba(187,14,67,1) 49%, rgba(3,193,168,1) 97%);
+color: aliceblue;
+
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 20px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.c{
+  text-align: center;
+}
+
+
+
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+
+opacity: 66;
+
+
+
+}
+
+.fade-in-text {
+  font-family: Arial;
+  font-size: 60px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+  color: aliceblue;
+}
+
+
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+
+.ll{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.anime{
+  background: rgb(193,195,255);
+  background: linear-gradient(90deg, rgba(193,195,255,1) 0%, rgba(106,79,87,1) 49%, rgba(63,255,230,1) 97%);
+
+}
+
+
+.ggrid-container {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+
+  padding: 10px;
+}
+.ggrid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.first{ 
+
+  float: left;
+
+
+}
+.second{ 
+
+  float: right;
+
+
+}
+
+
+
+.button {
+  background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  height: 300px;
+  width: 300px;
+}
+
+.mm{
+
+  background-color: #333;
+
+}
+
+.rr{
+color: darkred;
+font-family: Arial;
+font-size: 60px;
+padding: 30px;
+
+}
+
+
+
+.vv{
+  color: rgb(255, 255, 255);
+  font-family:'Times New Roman', Times, serif;
+  font-size: 40px;
+  border: #bbb;
+  
+  }
+
+  .pp{
+
+    background-color: rgb(0, 0, 0);
+  }
+
+  .pp2{
+
+    background-color: #b80000;
+  }
+
+
+  .bbb{
+background-color: #b80000;
+height: 400px;
+
+  }
+  .bb{
+    height: 400px;
+    background-color: rgb(48, 48, 48);
+  }
+table{
+
+  width: 100%;
+}
+.l{
+
+  text-align: right;
+}
